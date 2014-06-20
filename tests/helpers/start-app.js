@@ -1,7 +1,7 @@
 /* global require */
 
-var Application = require('orbital-todos/app')['default'];
-var Router = require('orbital-todos/router')['default'];
+var Application = require('ember-orbit-todos/app')['default'];
+var Router = require('ember-orbit-todos/router')['default'];
 
 export default function startApp(attrs) {
   var App;

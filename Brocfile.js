@@ -7,6 +7,24 @@ var app = new EmberApp();
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
+
+app.import({
+	development: "vendor/orbit.js/orbit.js",
+	production: "vendor/orbit.js/orbit.min.js"
+});
+app.import({
+	development: "vendor/orbit.js/orbit-common.js",
+	production: "vendor/orbit.js/orbit-common.min.js"
+});
+app.import({
+	development: "vendor/orbit.js/orbit-common-local-storage.js",
+	production: "vendor/orbit.js/orbit-common-local-storage.min.js"
+});
+app.import({
+	development: "vendor/ember-orbit-development/index.js",
+	production: "vendor/ember-orbit-production/index.js"
+});
+
 // If you need to use different assets in different
 // environments, specify an object as the first parameter. That
 // object's keys should be the environment name and the values

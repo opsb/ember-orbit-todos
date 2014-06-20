@@ -1,4 +1,4 @@
-# Orbital-todos
+# Ember-orbit-todos
 
 This README outlines the details of collaborating on this Ember application.
 

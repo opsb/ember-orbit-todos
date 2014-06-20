@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>OrbitalTodos</title>
+    <title>EmberOrbitTodos</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{BASE_TAG}}
 
     <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/orbital-todos.css">
+    <link rel="stylesheet" href="assets/ember-orbit-todos.css">
   </head>
   <body>
     <script>
-      window.OrbitalTodosENV = {{ENV}};
-      window.EmberENV = window.OrbitalTodosENV.EmberENV;
+      window.EmberOrbitTodosENV = {{ENV}};
+      window.EmberENV = window.EmberOrbitTodosENV.EmberENV;
     </script>
     <script src="assets/vendor.js"></script>
-    <script src="assets/orbital-todos.js"></script>
+    <script src="assets/ember-orbit-todos.js"></script>
     <script>
-      window.OrbitalTodos = require('orbital-todos/app')['default'].create(OrbitalTodosENV.APP);
+      window.OrbitalTodos = require('ember-orbit-todos/app')['default'].create(EmberOrbitTodosENV.APP);
     </script>
   </body>
 </html>

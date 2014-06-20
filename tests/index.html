@@ -10,7 +10,7 @@
     {{BASE_TAG}}
 
     <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/orbital-todos.css">
+    <link rel="stylesheet" href="assets/ember-orbit-todos.css">
     <link rel="stylesheet" href="assets/qunit.css">
     <style>
       #ember-testing-container {
@@ -34,16 +34,16 @@
     <div id="qunit-fixture"></div>
 
     <script>
-      window.OrbitalTodosENV = {{ENV}};
-      window.EmberENV = window.OrbitalTodosENV.EmberENV;
+      window.EmberOrbitTodosENV = {{ENV}};
+      window.EmberENV = window.EmberOrbitTodosENV.EmberENV;
     </script>
     <script src="assets/qunit.js"></script>
     <script src="assets/qunit-notifications.js"></script>
     <script src="assets/vendor.js"></script>
-    <script src="assets/orbital-todos.js"></script>
+    <script src="assets/ember-orbit-todos.js"></script>
     <script src="testem.js"></script>
     <script>
-      require('orbital-todos/tests/test-helper');
+      require('ember-orbit-todos/tests/test-helper');
     </script>
     <script src="assets/test-loader.js"></script>
   </body>
