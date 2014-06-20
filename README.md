@@ -1,6 +1,8 @@
 # Ember-orbit-todos
 
-This README outlines the details of collaborating on this Ember application.
+Example app for ember-orbit and ember-cli. Currently uses orbitjs' in-memory store. Examples using other stores to follow soon.
+
+
 
 ## Installation
 
