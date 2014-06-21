@@ -1,8 +1,13 @@
 # Ember-orbit-todos
 
-Example app for ember-orbit and ember-cli. Currently uses orbitjs' in-memory store. Examples using other stores to follow soon.
+Example app for ember-orbit and ember-cli. Configured to use LocalStorage source, see app/initializers/ember-orbit.js to see how to switch to the InMemoryStore.
 
 
+
+Gotchas
+-------
+
+### ember-cli
 Note that you need to run 
 
 $ npm rm ember-cli-ember-data --save-dev
