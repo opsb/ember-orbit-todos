@@ -3,6 +3,12 @@
 Example app for ember-orbit and ember-cli. Currently uses orbitjs' in-memory store. Examples using other stores to follow soon.
 
 
+Note that you need to run 
+
+$ npm rm ember-cli-ember-data --save-dev
+
+to remove ember-data as a dependency when create a new project with ember-cli
+
 
 ## Installation
 

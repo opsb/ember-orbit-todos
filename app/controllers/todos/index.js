@@ -27,7 +27,7 @@ export default Ember.ArrayController.extend({
 
 	actions: {
 		createTodo: function(title) {
-			this.orbit.add('todo', { title: title });
+			this.store.add('todo', { title: title });
 		},
 
 		clearCompletedTodos: function() {
