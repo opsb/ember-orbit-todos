@@ -31,7 +31,6 @@ export default Ember.ArrayController.extend({
 		},
 
 		clearCompletedTodos: function() {
-			console.log("clearing");
 			this.filterProperty('isDone', true).forEach(this.removeObject, this);
 		}
 	}
