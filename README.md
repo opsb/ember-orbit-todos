@@ -1,7 +1,6 @@
 # Ember-orbit-todos
 
-Example app for ember-orbit and ember-cli. Configured to use LocalStorage source, see app/initializers/ember-orbit.js to see how to switch to the InMemoryStore.
-
+This is an example app for ember-orbit with ember-cli. Out of the box it's configured to use local-storage but you can easily switch it to in-memory as well (see app/initializers/ember-orbit.js).
 
 
 Gotchas
@@ -12,7 +11,7 @@ Note that you need to run
 
 $ npm rm ember-cli-ember-data --save-dev
 
-to remove ember-data as a dependency when create a new project with ember-cli
+to remove ember-data as a dependency otherwise it will conflict with ember-orbit
 
 
 ## Installation
