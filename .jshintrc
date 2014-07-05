@@ -4,7 +4,8 @@
     "window": true,
     "EmberOrbitTodosENV": true,
     "Orbit": true,
-    "EO": true
+    "EO": true,
+    "OC": true
   },
   "browser" : true,
   "boss" : true,

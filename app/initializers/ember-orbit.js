@@ -1,10 +1,5 @@
 import Ember from 'ember';
 
-var get = Ember.get,
-    set = Ember.set;
-
-var Promise = Ember.RSVP.Promise;
-
 var LocalStorageStore = EO.Store.extend({
   	orbitSourceClass: OC.LocalStorageSource,
   	orbitSourceOptions: {
