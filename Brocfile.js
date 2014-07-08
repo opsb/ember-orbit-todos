@@ -21,8 +21,8 @@ app.import({
 	production: "vendor/orbit.js/orbit-common-local-storage.min.js"
 });
 app.import({
-	development: "vendor/ember-orbit-development/index.js",
-	production: "vendor/ember-orbit-production/index.js"
+	development: "vendor/ember-orbit/ember-orbit.js",
+	production: "vendor/ember-orbit/ember-orbit.min.js"
 });
 
 // If you need to use different assets in different

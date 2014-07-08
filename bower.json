@@ -13,8 +13,7 @@
     "ember-qunit-notifications": "^0.0.1",
     "ember-cli-test-loader": "rjackson/ember-cli-test-loader#0.0.2",
     "orbit.js": "~0.2",
-    "ember-orbit-development": "https://lytbulb-vendor.s3.amazonaws.com/ember-orbit/347f1d3/ember-orbit.js",
-    "ember-orbit-production": "https://lytbulb-vendor.s3.amazonaws.com/ember-orbit/347f1d3/ember-orbit.min.js"
+    "ember-orbit": "~0.1.1"
   },
   "devDependencies": {
     "bower-bourbon": "~3.1.8",
