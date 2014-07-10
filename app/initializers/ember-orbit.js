@@ -1,10 +1,13 @@
 import Ember from 'ember';
+import Orbit from 'orbit';
+import LocalStorageSource from 'orbit-common/local-storage-source';
+import EO from 'ember-orbit';
 
 var LocalStorageStore = EO.Store.extend({
-  	orbitSourceClass: OC.LocalStorageSource,
-  	orbitSourceOptions: {
-	  namespace: "ember-orbit-todos" // n.s. for localStorage
-	}
+  orbitSourceClass: LocalStorageSource,
+  orbitSourceOptions: {
+    namespace: "ember-orbit-todos" // n.s. for localStorage
+  }
 });
 
 export default {

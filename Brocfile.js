@@ -6,23 +6,21 @@ var app = new EmberApp();
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
-//
 
-app.import({
-	development: "vendor/orbit.js/orbit.js",
-	production: "vendor/orbit.js/orbit.min.js"
+app.import('vendor/orbit.js/orbit.amd.js', {
+  exports: {'orbit': ['default']}
 });
-app.import({
-	development: "vendor/orbit.js/orbit-common.js",
-	production: "vendor/orbit.js/orbit-common.min.js"
+
+app.import('vendor/orbit.js/orbit-common.amd.js', {
+  exports: {'orbit-common': ['default']}
 });
-app.import({
-	development: "vendor/orbit.js/orbit-common-local-storage.js",
-	production: "vendor/orbit.js/orbit-common-local-storage.min.js"
+
+app.import('vendor/orbit.js/orbit-common-local-storage.amd.js', {
+  exports: {'orbit-common/local-storage-source': ['default']}
 });
-app.import({
-	development: "vendor/ember-orbit/ember-orbit.js",
-	production: "vendor/ember-orbit/ember-orbit.min.js"
+
+app.import('vendor/ember-orbit/ember-orbit.amd.js', {
+  exports: {'ember-orbit': ['default']}
 });
 
 // If you need to use different assets in different
