@@ -1,0 +1,27 @@
+<h1>Todos</h1>
+
+{{view 'todos/create' placeholder="What needs to be done?"}}
+
+<div id="stats">
+	<button {{action 'clearCompletedTodos'}}>
+		Clear Completed Todos
+	</button>
+
+  {{remaining}} remaining
+</div>
+
+<label>
+  {{input type="checkbox" checked=allAreDone disabled=isEmpty}}
+  Mark All as Done
+</label>
+
+<ul>
+{{#each model}}
+  <li {{bindAttr class="isDone"}}>
+    <label>
+      {{input type="checkbox" checked=isDone}}
+      {{title}}
+    </label>
+  </li>
+{{/each}}
+</ul>
