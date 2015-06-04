@@ -16,11 +16,11 @@
 </label>
 
 <ul>
-{{#each model}}
-  <li {{bindAttr class="isDone"}}>
+{{#each model as |todo|}}
+  <li class="{{isDone}}">
     <label>
       {{input type="checkbox" checked=isDone}}
-      {{title}}
+      {{todo.title}}
     </label>
   </li>
 {{/each}}
