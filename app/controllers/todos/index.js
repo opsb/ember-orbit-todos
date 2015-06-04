@@ -1,29 +1,34 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-	content: [],
 
-	remaining: function() {
-		return this.get("model.length") - this.get("completed");
-	}.property('@each.isDone', 'model.length'),
+	remaining: Ember.computed('@each.isDone', 'model.length', {
+    get: function() {
+		  return this.get("model.length") - this.get("completed");
+    }
+	}),
 
-	completed: function(){
-		return this.filterProperty('isDone', true).get('length');
-	}.property('@each.isDone'),
+	completed: Ember.computed('@each.isDone', {
+    get: function() {
+		  return this.filterProperty('isDone', true).get('length');
+    }
+	}),
 
-	isEmpty: function() {
-		return this.get('length') === 0;
-	}.property('length'),
+	isEmpty: Ember.computed('length', {
+    get: function() {
+		  return this.get('length') === 0;
+    }
+	}),
 
-	allAreDone: function(key, value) {
-		if (arguments.length === 2) {
-			this.setEach('isDone', value);
-
-			return value;
-		} else {
-			return !this.get('isEmpty') && this.everyProperty('isDone', true);
-		}
-	}.property('@each.isDone'),
+	allAreDone: Ember.computed('@each.isDone', {
+    get: function() {
+      return !this.get('isEmpty') && this.everyProperty('isDone', true);
+    },
+    set: function(key, value) {
+      this.setEach('isDone', value);
+      return value;
+    }
+	}),
 
 	actions: {
 		createTodo: function(title) {
@@ -34,4 +39,5 @@ export default Ember.ArrayController.extend({
 			this.filterProperty('isDone', true).forEach(this.removeObject, this);
 		}
 	}
+
 });
